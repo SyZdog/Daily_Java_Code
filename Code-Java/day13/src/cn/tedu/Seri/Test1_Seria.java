@@ -19,8 +19,8 @@ public class Test1_Seria {
 		// TODO Auto-generated method stub
 		// 创建ObjectInputStream完成反序列化
 		try {
-			 ObjectInputStream in = new ObjectInputStream(
-					 new FileInputStream("/Users/zdzsmacbookpro/Desktop/teach/to.txt"));
+			ObjectInputStream in = new ObjectInputStream(
+					new FileInputStream("/Users/zdzsmacbookpro/Desktop/teach/to.txt"));
 			//指定要读取的对象
 			Object o = in.readObject();
 			System.out.println(o);//默认打印地址值cn.tedu.Seri.Student@5f150435，需要重写toString方法
