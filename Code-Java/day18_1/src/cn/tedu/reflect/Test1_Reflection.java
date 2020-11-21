@@ -2,6 +2,7 @@ package cn.tedu.reflect;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 import java.util.Arrays;
@@ -64,5 +65,25 @@ public class Test1_Reflection {
 			System.out.println(f.getName());//获取属性名
 			System.out.println(f.getType().getName());//获取变量类型
 		}
+	}
+	
+	//通过反射创建对象
+	
+	@Test
+	public void getObeject() throws Exception {
+		//1.获取class对象
+		Class<?> clazz = Student.class;
+		//2.创建对象
+		Object obj = clazz.getConstructor().newInstance();//触发无参构造,JavaSE-14需补充.getConstructor()
+		System.out.println(obj);
+		//指定含参构造
+		Constructor<?> c = clazz.getConstructor(String.class,int.class);
+		Object obj2 = c.newInstance("jack",20);
+		System.out.println(obj2);
+		Student stu = (Student)obj2;//向下转型Object->Student
+		System.out.println(stu.age);//调用Student类特有功能
+		System.out.println(stu.name);
+		
+ 		
 	}
 }
