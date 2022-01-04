@@ -21,7 +21,7 @@ public class Test1_Reflection {
 		System.out.println(student1);//反射内容
 		System.out.println(student2.getName());//类名+包名
 		System.out.println(student3.getSimpleName());//只有类名
-		System.out.println(student3.getPackageName());
+		System.out.println(student3.getPackage());
 	}
 	//获取构造方法
 	@Test
