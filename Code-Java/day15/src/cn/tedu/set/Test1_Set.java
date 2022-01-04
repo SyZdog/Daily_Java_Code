@@ -12,6 +12,10 @@ public class Test1_Set {
 		// TODO Auto-generated method stub
 		//创建set对象
 		Set<String> set = new HashSet<String>();
+		//特点1：set集合中的元素都是无序的 
+		//特点2：set集合中的元素是不能重复的 
+		//特点3：set集合中允许存放null元素 
+		
 		//常用方法
 		set.add("aaa");
 		set.add("bbb");
@@ -24,6 +28,7 @@ public class Test1_Set {
 		//set.clear();//清空集合
 		System.out.println(set.contains("ccc"));//判断是否存在指定元素
 		System.out.println(set.remove(null));//删除指定元素
+		System.out.println(set.equals("ccc"));//判断set是否和ccc相等
 		System.out.println(set.hashCode());//获取哈希值
 		System.out.println(set.isEmpty());//判断集合是否为空
 		System.out.println(set.size());//获取集合大小

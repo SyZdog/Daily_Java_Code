@@ -21,13 +21,13 @@ public class Test4_Arraylist {
 		list.add(1, 99);//指定下标处添加元素
 		System.out.println(list);
 		//list.clear();清空集合
-		System.out.println(list.contains(500));
-		System.out.println(list.get(1));
-		System.out.println(list.indexOf(300));
-		System.out.println(list.lastIndexOf(300));
+		System.out.println(list.contains(500));//判断是否包含
+		System.out.println(list.get(1));//根据下标获取元素
+		System.out.println(list.indexOf(300));//获取指定元素第一次出现的下标
+		System.out.println(list.lastIndexOf(300));//获取指定元素最后一次出现的下标
 		System.out.println(list.set(1, 700));//置换元素
-		System.out.println(list.size());
-		System.out.println(list.remove(Integer.valueOf(300)));
+		System.out.println(list.size());//获取集合长度
+		System.out.println(list.remove(Integer.valueOf(300)));//直接删除指定元素
 		System.out.println(list.remove(1));//删除下标为1的元素
 		System.out.println(list);
 		Object[] arr = list.toArray();//集合转数组

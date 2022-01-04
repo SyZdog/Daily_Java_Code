@@ -14,15 +14,17 @@ public class Test2_HashSet {
 		set.add(200);
 		set.add(300);
 		set.add(100);//set集合可以去重
-		System.out.println(set.remove(200));
-		System.out.println(set.isEmpty());
-		System.out.println(set.size());
+//		set.clear();
+		System.out.println(set.contains(200));//判断是否包含
+		System.out.println(set.isEmpty());//判断是否为空
+		System.out.println(set.remove(100));//删除元素
+		System.out.println(set.size());//获取长度
 		
 		//迭代集合
 		Iterator<Integer> it = set.iterator();
-		while (it.hasNext()) {
-			Integer next = it.next();
-			System.out.println(next);
+		while (it.hasNext()) {//判断有没有下一个元素
+			Integer next = it.next();//获取遍历到的元素
+			System.out.println(next);//打印
 			
 		}
 	}

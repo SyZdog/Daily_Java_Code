@@ -3,7 +3,7 @@ package cn.tedu.totallString;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-
+//这个类用来测试Map集合：字符串中的字符统计
 public class Test1_BLString {
 
 	public static void main(String[] args) {
@@ -11,9 +11,10 @@ public class Test1_BLString {
 		//接收用户输入的一串字符串
 		@SuppressWarnings("resource")
 		String input = new Scanner(System.in).nextLine();
+		
 		//创建map
-
 		Map<Character, Integer> map = new HashMap<Character, Integer>();//创建map存数据，格式：{a=1,b=2,c=1}
+		
 		//获取下标
 		for (int i = 0; i < input.length(); i++) {
 //	         --map的key是啥？就是2、获取到的字符

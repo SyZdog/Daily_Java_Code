@@ -13,6 +13,7 @@ public class Test1_Map {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//创建map对象
+		//map中的数据要符合映射规则，需要同时指定K和V的数据类型。到底指定成什么类型，要看你想添加什么数据。
 		Map<Integer, String> map = new HashMap<Integer, String>();
 		//常用方法
 		map.put(9527, "唐伯虎");
@@ -25,7 +26,7 @@ public class Test1_Map {
 		map.put(9530, "马冬梅");
 		System.out.println(map);
 		//map.clear();//清空map集合
-		System.out.println(map.containsKey(9527));//判断是否包含指定的value
+		System.out.println(map.containsKey(9527));//判断是否包含指定的key
 		System.out.println(map.containsValue("马冬梅"));//判断是否包含指定的value
 		System.out.println(map.equals("如花"));//判断是否和指定元素相等
 		System.out.println(map.get(9527));//获取到的是key对应的value

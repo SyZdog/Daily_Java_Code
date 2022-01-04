@@ -2,7 +2,7 @@ package cn.tedu.collection;
 
 import java.util.LinkedList;
 
-public class Test3_LInkedList {
+public class Test3_LinkedList {
 	
 	public static void main(String[] args) {
 		//这个类用来测试LinkedList

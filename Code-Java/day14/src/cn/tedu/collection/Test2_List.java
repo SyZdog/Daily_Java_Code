@@ -13,10 +13,16 @@ public class Test2_List {
 		List<String> list = new ArrayList<String>();
 		
 		//测试继承自Collection接口的方法
+//		list.clear();//清空集合
 		list.add("jack");
 		list.add("rose");
 		System.out.println(list.contains("jack"));
-		list.equals("jack");
+		System.out.println(  list.equals("jack") );
+		System.out.println(  list.hashCode() );
+		System.out.println(  list.isEmpty() );
+		System.out.println(  list.remove("hanmeimei") );
+		System.out.println(  list.size() );
+		System.out.println(  list.toArray() );//变成数组
 		
 		//测试List接口的特有方法
 		list.add(1,"马冬梅");//在指定的索引中添加元素
@@ -26,7 +32,7 @@ public class Test2_List {
 		System.out.println(list.lastIndexOf("jack"));//获取指定元素最后出现的下标
 		list.remove(1);//按照下标删除指定元素
 		System.out.println(list);
-		list.set(1, "tony");
+		list.set(1, "tony");//置换元素
 		System.out.println(list);
 		List<String> subList = list.subList(0, 1);//截取List（含头不含尾）
 		System.out.println(subList);
@@ -69,6 +75,6 @@ public class Test2_List {
 			System.out.println(s);
 		}
 	}
-	  //总结：方式3和方式4有什么区别？-- 3是父接口Iterator4是子接口ListIterator
+	  //总结：方式3和方式4有什么区别？-- 3是父接口Iterator，4是子接口ListIterator
     //子接口拥有父接口的所有方法也有自己的特有方法，子接口的特有方法就是向前/逆向遍历
 }

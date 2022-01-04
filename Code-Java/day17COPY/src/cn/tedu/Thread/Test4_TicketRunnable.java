@@ -37,7 +37,7 @@ class TicketRunnable implements Runnable{
 				}
 				//Thread.currentThread().getName()获取当前正在执行任务的线程名
 				System.out.println(Thread.currentThread().getName() + "=" + Ticket--);
-				if(Ticket <= 0)break;
+				if(Ticket <= 0)break;//死循环的出口！！
 		}
 				
 		}
